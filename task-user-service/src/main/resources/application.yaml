@@ -1,0 +1,18 @@
+server:
+  port: 5001
+
+
+spring:
+  application:
+    name:USER-SERVICE
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/task_user_service
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
